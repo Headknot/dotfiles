@@ -2,7 +2,7 @@
 
 set -e
 
-# Source: https://gist.github.com/davejamesmiller/1965569
+# Creds: github.com/davejamesmiller github.com/alexbooker
 ask() {
   while true; do
     if [ "${2:-}" = "Y" ]; then
