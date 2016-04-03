@@ -51,3 +51,7 @@ fi
 if ask "Install symlink for .bash_aliases?" Y; then
   ln -sfn ${dir}/.config/i3 ${HOME}/.config/i3
 fi
+
+if ask "Install symlink for .zshrc?" Y; then
+  ln -sfn ${dir}/.zshrc ${HOME}/.zshrc
+fi
