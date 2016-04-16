@@ -28,8 +28,8 @@ ask() {
 
 dir=~/dotfiles
 
-if ask "Install symlink for .Xdefaults?" Y; then
-  ln -sf ${dir}/.Xdefaults ${HOME}/.Xdefaults
+if ask "Install symlink for .Xresources?" Y; then
+  ln -sf ${dir}/.Xresources ${HOME}/.Xresources
 fi
 
 if ask "Install symlink for .xinitrc?" Y; then
@@ -48,10 +48,7 @@ if ask "Install symlink for i3?" Y; then
   ln -sfn ${dir}/.config/i3/config ${HOME}/.config/i3/config
 fi
 
-if ask "Install symlink for .bash_aliases?" Y; then
-  ln -sfn ${dir}/.config/i3 ${HOME}/.config/i3
-fi
-
 if ask "Install symlink for .zshrc?" Y; then
   ln -sfn ${dir}/.zshrc ${HOME}/.zshrc
+  ln -sf ${dir}/.aliases.sh ${HOME}/.aliases.sh
 fi

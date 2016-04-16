@@ -18,3 +18,5 @@ antigen theme maran
 
 # Tell antigen that you're done.
 antigen apply
+
+export EDITOR=vim

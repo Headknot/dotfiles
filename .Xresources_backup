@@ -1,0 +1,22 @@
+
+URxvt.font:                xft:Terminus:pixelsize=11:antialias=true:hinting=true
+URxvt.boldFont:            xft:Terminus:pixelsize=11:antialias=true:hinting=true:bold
+URxvt.italicFont:          xft:Terminus:pixelsize=11:antialias=true:hinting=true:italic
+URxvt.boldItalicFont:      xft:Terminus:pixelsize=11:antialias=true:hinting=true:bold:italic
+URxvt.letterSpace:         0 
+
+URxvt*foreground:          #00FF00
+URxvt*background:	   #FFFFFF
+
+URxvt.internalBorder:      0
+URxvt.externalBorder:      0
+
+URxvt.scrollBar:           false
+
+URxvt*fading:              30
+URxvt*shading:		   20
+
+URxvt*transparent:	   true
+URxvt*saveLines:	   12000
+
+URxvt.url-launcher:        /usr/bin/chromium

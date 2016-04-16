@@ -30,18 +30,18 @@
   set $workspace9 "9: "
   set $workspace10 "10: "
 
-#  set $monitor1 "DVI-I-1"
-#  set $monitor2 "HDMI-0"
+  set $monitor1 "VGA-0"
+  set $monitor2 "VGA-1"
 
 # General Configuration
   font pango:System San Francisco Display 10
   font xft:terminus 11
   floating_modifier $mod
-  hide_edge_borders both
+  hide_edge_borders both 
   new_window none
   smart_borders on
   gaps inner 10
-  gaps outer 20
+  gaps outer 15
 
 # Window-Related Bindings
   bindsym $alt+F4 kill
@@ -54,8 +54,8 @@
   bindsym $mod+Shift+k move up
   bindsym $mod+Shift+l move right
   bindsym $mod+Shift+space floating toggle
-  bindsym $mod+f fullscreen toggl
-  bindsym $mod+v split v
+  bindsym $mod+f fullscreen toggle
+  bindsym $mod+v split v 
   bindsym $mod+h split h
   bindsym $mod+space focus mode_toggle
   bindsym $mod+m mode "  "
@@ -113,10 +113,12 @@
 # Workspace Monitors
   workspace $workspace1 output $monitor1
   workspace $workspace2 output $monitor1
-  workspace $workspace3 output $monitor1
-  workspace $workspace4 output $monitor1
-  workspace $workspace5 output $monitor1
-  workspace $workspace6 output $monitor1
+  workspace $workspace3 output $monitor2
+  workspace $workspace4 output $monitor2
+  workspace $workspace5 output $monitor2
+  workspace $workspace6 output $monitor2 
+  workspace $workspace7 output $monitor1
+  workspace $workspace8 output $monitor1
   workspace $workspace9 output $monitor1
   workspace $workspace10 output $monitor1
 
@@ -135,16 +137,16 @@
   for_window [class="Pavucontrol"] floating enable
 
 # Autostart
-exec --no-startup-id unclutter
-exec_always --no-startup-id feh --bg-fill ~/Dropbox/Pics/kuldar1.png
-exec --no-startup-id urxvt
-exec --no-startup-id urxvt
-exec --no-startup-id dropbox
-exec --no-startup-id chromium
-exec --no-startup-id spotify
-exec --no-startup-id keepass
-exec --no-startup-id thunderbird
-exec_always compton -f
+  exec --no-startup-id unclutter
+  exec_always --no-startup-id feh --bg-fill ~/Dropbox/Pics/kuldar1.png
+  exec --no-startup-id urxvt
+  exec --no-startup-id urxvt
+  exec --no-startup-id dropbox 
+  exec --no-startup-id spotify
+  exec --no-startup-id keepass
+  exec --no-startup-id thunderbird
+  exec_always compton -f
+  exec_always xrandr --output VGA-0 --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal
 
 # Widow Colours
 #                         border  background text    indicator
