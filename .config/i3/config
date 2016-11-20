@@ -138,7 +138,7 @@
 
 # Autostart
   exec --no-startup-id unclutter
-  exec_always --no-startup-id feh --bg-fill ~/Dropbox/Pics/kuldar1.png
+  exec_always --no-startup-id feh --bg-fill ~/bg.jpg
   exec --no-startup-id urxvt
   exec --no-startup-id urxvt
   exec --no-startup-id dropbox 
