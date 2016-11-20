@@ -2,4 +2,4 @@
 
 These are my dotfiles. Uploaded to simplify creating a new Linux build with my preferred settings.
 
-[`install.sh`](https://github.com/Headknot/dotfiles/blob/master/install.sh) Creates symlinks for the dotfiles and copies fonts to your home folder.
+[`install.sh`](https://github.com/Headknot/dotfiles/blob/master/install.sh) Creates symlinks for the dotfiles and copies fonts and wallpaper to your home folder.
