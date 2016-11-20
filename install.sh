@@ -52,3 +52,7 @@ if ask "Install symlink for .zshrc?" Y; then
   ln -sfn ${dir}/.zshrc ${HOME}/.zshrc
   ln -sf ${dir}/.aliases.sh ${HOME}/.aliases.sh
 fi
+
+if ask "Copy .fonts to ~/.fonts?" Y; then
+  cp -r ${dir}/.fonts ${HOME}/.fonts
+fi
