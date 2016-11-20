@@ -53,6 +53,10 @@ if ask "Install symlink for .zshrc?" Y; then
   ln -sf ${dir}/.aliases.sh ${HOME}/.aliases.sh
 fi
 
-if ask "Copy .fonts to ~/.fonts?" Y; then
+if ask "Copy .fonts to home folder?" Y; then
   cp -r ${dir}/.fonts ${HOME}/.fonts
+fi
+
+if ask "Copy bg.jpg to home folder?" Y; then
+  cp ${dir}/bg.jpg ${HOME}/bg.jpg
 fi
