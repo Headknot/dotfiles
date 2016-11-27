@@ -36,6 +36,10 @@ if ask "Install symlink for .xinitrc?" Y; then
   ln -sf ${dir}/.xinitrc ${HOME}/.xinitrc
 fi
 
+if ask "Install symlink for .vimrc?" Y; then
+  ln -sf ${dir}/.vimrc ${HOME}/.vimrc
+fi
+
 if ask "Install symlink for .i3blocks.conf?" Y; then
   ln -sf ${dir}/.i3blocks.conf ${HOME}/.i3blocks.conf
 fi
